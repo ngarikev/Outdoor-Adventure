@@ -1,0 +1,777 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&family=Nosifer&family=Space+Mono:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;    
+}
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/**Header section**/
+.nav{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background: #05386b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.nav a{
+    text-decoration: none;
+}
+.logo h1{
+    font-family: 'Nosifer', sans-serif;
+    margin-left: 50px;
+    color: crimson;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+.logo h2{
+    font-family: 'Nosifer', sans-serif;
+    margin-left: 55px;
+    font-size: 1.5rem;
+    color: #777;
+    letter-spacing: .5rem;
+    cursor: pointer;
+}
+
+.nav-links ul{
+    display: flex;
+    margin-right: 50px;
+    list-style: none;
+}
+
+.nav-links a{
+    margin-right: 2.8rem;
+    color: #777;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 300ms ease color;
+}
+
+.nav-links a:hover{
+    color: crimson;
+    background: none;
+}
+
+.nav-links .cta {
+    border: 1px solid crimson;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: all 300ms ease;
+    color: aliceblue;
+}
+.nav-links.cta:hover{
+   transform: scale(.95);
+   background: none;
+}
+.nav-links .fa-xmark{
+    color: aliceblue;
+    font-size: 2.5rem;
+    margin-right: 2rem;
+    display: none;
+}
+.nav .fa-bars{
+    color: aliceblue;
+    font-size: 3.5rem;
+    margin-right: 2rem;
+    display: none;
+}
+
+/**End Header section**/
+.c-item{
+    height: 620px;
+}
+.c-img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(.6);
+}
+/**event section**/
+
+.events{
+    width: 95%;
+    margin: auto;
+}
+
+.quote{
+    text-align: center;
+    margin-top: 50px;  
+}
+.quote p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.quote h5{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.event-title{
+    text-align: center;
+    margin-top: 80px;
+}
+.event-title h1{
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+hr{
+    border: 2px solid crimson;
+    width: 100px;
+    margin-left: 46%;
+    margin-bottom: 80px;
+}
+.event-row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.event-col{
+    padding-left: 80px;
+    margin-bottom: 80px; 
+}
+
+.event-col img{
+    width: 400px;
+    height: 300px;
+    margin-bottom: 2rem;
+}
+
+.text-col{
+    text-align: center;
+}
+
+.text-col h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.text-col p{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.text-col a i{
+    text-decoration: none;
+    color: aliceblue;   
+}
+
+.event-btn{
+    color: aliceblue;
+    transition: all 300ms ease;
+    background: crimson;
+    padding: 8px;
+    border-radius: 30px;
+    text-align: center;
+
+}
+.event-btn:hover{
+    background: #b00000;
+    color: aliceblue;
+}
+
+
+/**explore section**/
+.explore{
+    background-image: url(img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%; 
+    
+}
+.explore-bg{
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    opacity: .7;
+    color: aliceblue;
+    position: absolute;
+}
+.explore-text{
+    height: 100vh;
+    display: block;
+    margin-left: 50%;
+    margin-top: 30vh;
+}
+
+.explore-text h1{
+    font-size: 2rem;
+}
+.explore-text hr{
+    margin: 1.5rem 0 1.5rem 0%;
+}
+.explore-text p{
+    margin-bottom: 1.5rem;
+}
+.explore-text a{
+    text-decoration: none;
+}
+
+.explore-text .btn{
+    color: aliceblue;
+    transition: all 300ms ease;
+    background: crimson;
+    padding: 8px;
+    border-radius: 30px;
+    text-align: center;
+}
+.explore-text .btn:hover{
+    background-color: #b00000;
+    color: aliceblue;
+}
+
+/**tour-destination section**/
+
+.tours{
+    width: 95%;
+    margin: auto;
+}
+.tours-row{
+    display: flex;
+    gap: 40px;
+    margin-top: 80px;  
+}
+.text-col{
+    text-align: start;
+}
+.text-col h1{
+    font-size: 2rem;
+}
+.text-col hr{
+    margin: 1.5rem 0 1.5rem 0%;
+}
+.text-col p{
+    line-height: 3rem;
+}
+.text-col .btn{
+    color: aliceblue;
+    transition: all 300ms ease;
+    background: crimson;
+    padding: 8px;
+    border-radius: 30px;
+    text-align: center;
+}
+.photo-gallery{
+    display: flex;
+    gap: 20px;
+    
+}
+.photo-col{
+    display: flex;
+    flex-direction: column;
+    
+}
+.photo-img img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    margin-bottom: 20px;  
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 300ms ease transform;
+    flex-wrap: wrap; 
+}
+.photo-img img:hover{
+    transform: scale(1.1);
+}
+
+
+/**footer section**/
+
+footer{
+    width: 100%;
+    background: #111;
+    margin-top: 80px;
+}
+.footer-text{
+    color: aliceblue;
+    padding: 30px 0;
+    text-align: center;
+    line-height: 3rem;
+}
+
+/**about page**/
+.main{
+    background-image: url(img/otherbg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    
+}
+
+.bg-opacity{
+    width: 100%;
+    height: 80vh;
+    background: black;
+    position: absolute;
+    opacity: .7;
+}
+.about-title{
+    color: aliceblue;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+}
+.about{
+    width: 90%;
+    margin: auto;
+}
+.about-rows{
+    margin-top: 80px;
+    
+}
+.about-cols{
+    display: flex;
+    gap: 80px;
+}
+.col1 h1{
+    font-size: 2.5rem;
+}
+.col1 p, .col2 p{
+    line-height: 2rem;
+}
+.col1 hr, .col2 hr{
+    margin: 1.5rem 0 1.5rem 0%;
+}
+.col2 img{
+    width: 500px;
+    border-radius: 5px;
+    box-shadow: 10px 10px  rgba(128,128,128, .2);
+}
+.col1 h2, .col2 h2{
+    margin-top: 80px;
+}
+
+
+.col2 i{
+    color: crimson;
+    width: 50px;
+}
+
+
+
+/**services page**/
+
+.services{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+.services h1{
+    margin-top: 80px;
+    font-size: 2rem;
+}
+.services hr{
+    margin: 1.5rem 45%;
+}
+.services p{
+    line-height: 1.7rem;
+    
+}
+
+.service-rows{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    gap: 100px;
+}
+.service-cols{
+    margin-top: 80px;
+    flex-wrap: wrap;
+}
+
+.content h3{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.content p{
+    margin-bottom: 4rem;
+    font-size: 1rem;
+}
+.content img{
+    width: 100%;
+    height: 400px;
+    border-radius: 5px;
+    box-shadow: 10px 10px  rgba(128,128,128, .2);
+}
+
+.text-container{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    gap: 80px;
+}
+.text-col{
+    margin-top: 80px;
+    flex-wrap: wrap;
+}
+.text-col hr{
+    margin: 1.5rem 0 1.5rem 0%;
+}
+.text-col p{
+    font-size: 1rem;
+}
+.text-col i{
+    color: crimson;
+    width: 50px;
+}
+
+
+
+/**events page**/
+
+.sports{
+    width: 90%;
+    margin: auto;
+    
+}
+.sports h1{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.sports p{
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+
+}
+.water-sports, .winter-sports, .camping{
+    margin-top: 80px;
+}
+.span{
+    display: flex;
+    flex-direction: column;
+}
+
+.span hr{
+    margin: 0 0 2rem 7%;
+}
+.sports-img{
+    display: flex;
+    gap: 20px;
+    overflow-x: hidden;
+}
+.sports-img img{
+    width: 400px;
+    height: 400px;
+    border-radius: 5px;
+}
+
+
+
+
+/**contact page**/
+.contact-us{
+    width: 90%;
+    margin: auto;
+}
+
+.contact{
+    display: flex;
+    margin-top: 80px;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+.input-info{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.input-info h1{
+    margin-bottom: 50px;
+    font-size: 2.3rem;
+}
+.input-info input{
+    height: 50px;
+    outline: none;
+    border: 1px solid rgba(128,128,128, .2);
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    font-size: 1rem;
+}
+.input-info input::placeholder{
+    color: rgba(128,128,128, .6);
+    font-weight: 500;
+}
+.input-info textarea{
+    height: 100px;
+    outline: none;
+    border: 1px solid rgba(128,128,128, .4);
+    margin-bottom: 1.5rem;
+    padding: 1rem 0 0 1rem;
+    font-size: 1rem;
+}
+.input-info textarea::placeholder{
+    color: rgba(128,128,128, .6);
+    font-weight: 500;
+}
+.contact-btn{
+    color: aliceblue;
+    transition: all 300ms ease;
+    background: crimson;
+    padding: 8px;
+    border-radius: 30px;
+    text-align: center;
+
+}
+div a{
+    text-decoration: none;
+    transition: all 300ms ease;
+}
+div a:hover{
+    background-color: #b00000;
+}
+.contact-info h2{
+    margin-bottom: 50px;
+    font-size: 2.3rem;
+}
+.contact-info h4{
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+.contact-info p{
+    font-size: 1rem;
+}
+.contact-info i{
+    background: crimson;
+    padding: 12px;
+    font-size: 1rem;
+    margin-right: 5px;
+    border-radius: 50%;
+    text-align: center;
+    color: aliceblue;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.contact-info i:hover{
+    background-color: #b00000;
+}
+
+
+
+/*****media query****/
+@media (max-width: 1032px){
+    .logo h1{
+        margin-left: 40px;
+        font-size: 2.3rem;
+    }
+    .logo h2{
+        margin-left: 45px;
+        font-size: 1.3rem;
+    }
+    
+    .nav-links a{
+        margin-right: 2rem;
+    }
+    .sports-img {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 848px){
+
+    .nav-links ul{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: -250px;
+        width: 250px;
+        height: 100vh;
+        z-index: 10;
+        background: rgba(0,0,0, .6);
+        margin-right: 0;
+        transition: 700ms;
+    }
+    .nav-links a{
+        display: block;
+        color: aliceblue;
+        font-size: 2rem;
+        text-align: center;
+        padding: 50px; 
+    }
+    .nav-links .cta {
+        padding: 5px 8px; 
+        margin-left: 2rem;
+    }
+    .nav-links .fa-xmark{
+        display: block;
+        margin: 2rem
+    }
+    .nav .fa-bars{
+        display: block;
+    }
+    
+    .explore-text{
+        margin-left: 0;
+        margin-bottom: 50vh;
+        text-align: center;
+    }
+    .explore-text hr{
+        margin: 1.5rem 0 1.5rem 40%;
+    }
+    .explore-text p{
+        font-size: 1.5rem;
+    }
+    .text-col hr{
+        margin: 1.5rem 0 1.5rem 40%;
+    }
+    .text-col h1{
+        font-size: 1rem;
+    }
+    .tours-row{
+        flex-wrap: wrap;  
+    }
+    /***services***/
+    .text-col hr{
+        margin: 1.5rem 0%;
+    }
+    
+    /***events page***/
+   
+    .sports-img{
+        flex-wrap: wrap;  
+    }
+    .span hr{
+        margin: 1rem 0 1.5rem 0%;
+    }
+}
+
+
+@media (max-width: 540px){
+    .logo h1{
+        margin-left: 30px;
+        font-size: 2rem;
+    }
+    .logo h2{
+        margin-left: 35px;
+        font-size: 1rem;
+    }
+    .nav-links a{
+        font-size: 1rem;
+        padding: 20px; 
+    }
+    
+    .nav-links .fa-xmark{
+        font-size: 2rem;
+    }
+    .nav .fa-bars{
+        font-size: 2.5rem;
+    }
+    .event-title h1{
+        font-size: 1.5rem;
+    }
+    hr{
+        margin-left: 35%;
+    }
+    .event-row{
+        display: block;
+        
+    }
+    .event-col{
+        padding: 0;
+   
+    }
+    .event-col img{
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .explore-text h1{
+        font-size: 1.3rem;
+    }
+    .explore-text hr{
+        margin: 1rem 0 1rem 38%;
+    }
+    .explore-text p{
+        font-size: 1.2rem;
+    }
+    .tours-row{
+        margin-top: 10px;  
+    }
+    .text-col p{
+        line-height: 2rem;
+    }
+    
+    .photo-gallery{
+        display: block;   
+    }
+    .photo-img img{
+        width: 100%;
+    }
+
+    /***about page***/
+    .about-title{
+        font-size: 1.5rem;
+    }
+    .about-cols{
+        display: block;
+        gap: 80px;
+    }
+    .col1 h1{
+        font-size: 2rem;
+    }
+
+    .col1 hr, .col2 hr{
+        margin: .8rem 0 1rem 0%;
+    }
+    
+    .col2 img{
+        width: 100%;
+    }
+
+    /**services page**/
+
+    .services h1{
+        font-size: 1.3rem;
+    }
+    .services hr{
+        margin: 1rem 35%;
+    }
+    .service-rows{
+        display: block;
+        gap: 100px;
+    }
+    .text-container{
+        display: block;
+    }
+    .text-col hr{
+        margin: 1rem 0 1rem 1%;
+    }
+
+    /**events page**/
+
+    .sports h1{
+        font-size: 1.5rem;
+    }
+    .sports p{
+        font-size: 1.2rem;
+    }
+
+    /**contact page**/
+
+    .input-info h1{
+        font-size: 1.5rem;
+    }
+    .contact-info h2{
+        font-size: 1.5rem;
+    } 
+}
