@@ -90,6 +90,7 @@ body{
     font-size: 3.5rem;
     margin-right: 2rem;
     display: none;
+    z-index: 1000;
 }
 
 /**End Header section**/
@@ -619,6 +620,8 @@ div a:hover{
     }
     .nav .fa-bars{
         display: block;
+        z-index: 1000;
+        visibility: visible;
     }
     
     .explore-text{
