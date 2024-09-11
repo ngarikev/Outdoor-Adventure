@@ -9,6 +9,7 @@ openNavEl.addEventListener("click", showMenu)
 
 function showMenu(){
     navBarEl.style.right = "0"
+    console.log(clicked)
 }
 
 closeNavEl.addEventListener("click", hideMenu)
