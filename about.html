@@ -90,10 +90,16 @@
 <footer>
     <div class="footer-text">
         <p>ABC Fifth Avenue,pm 10160, XYZ City | Phone: +254-123-456-789 | Email: outdoor@adventures.com</p>
-        <p>Copyright © 2023 Outdoor Adventure</p>
+        <p>Copyright  &copy;<span id="current-year">20</span> Outdoor Adventure</p>
     </div>
 
 </footer>
-<script src="script.js"></script>
+<script src="script.js">
+const currentYear = document.getElementById("current-year")
+
+function showCurrentYear() {
+    currentYear = new Date().getFullYear()
+}
+</script>
 </body>
 </html>
