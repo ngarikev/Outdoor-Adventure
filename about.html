@@ -90,16 +90,18 @@
 <footer>
     <div class="footer-text">
         <p>ABC Fifth Avenue,pm 10160, XYZ City | Phone: +254-123-456-789 | Email: outdoor@adventures.com</p>
-        <p>Copyright  &copy;<span id="current-year">20</span> Outdoor Adventure</p>
+        <p>Copyright  &copy;<span id="current-year">0</span> Outdoor Adventure</p>
     </div>
 
 </footer>
 <script src="script.js">
-const currentYear = document.getElementById("current-year")
+const currentYearEl = document.getElementById("current-year")
 
 function showCurrentYear() {
-    currentYear = new Date().getFullYear()
+    currentYearEl.textContent = new Date().getFullYear()
 }
+
+showCurrentYear()
 </script>
 </body>
 </html>
